@@ -1,0 +1,94 @@
+.admin-header{
+    padding:20px 40px 16px;
+    background: #fff;
+    position: relative;
+
+}
+.admin-header .exitPlatform{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: 1px solid #999;
+    color: #999;
+    padding: 5px 20px;
+    border-radius: 4px;
+}
+.admin-header .user-img{
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.admin-header .user-img img{
+    width:80px;
+    height:80px;
+}
+.admin-header .user-info{
+    margin-left:30px;
+    margin-bottom:10px;
+}
+.admin-header .user-name{
+    display: inline-block;
+    font-size: 24px;
+    line-height: 33px;
+    margin-right: 10px;
+}
+.admin-header .user-role{
+    display: inline-block;
+    width:62px;
+    height:21px;
+    text-align: center;
+    line-height: 21px;
+    background: rgba(33,77,107,.04);
+    border-radius: 4px;
+    overflow: hidden;
+    font-size: 13px;
+    color:rgb(132,154,174);
+
+}
+.admin-header .total-list{
+    font-size:14px;
+    line-height: 20px;
+    padding-left:20px;
+    padding-right:16px;
+    border-right:1px solid rgba(13,38,63,0.1);
+}
+.admin-header .total-list.active .name,
+.admin-header .total-list.active .num{
+    color:#41B8B0!important;
+}
+.admin-header .total-list .num{
+    color:#34495E;
+}
+.admin-header .total-list .name{
+    color:rgba(52,73,94,0.5);
+}
+.admin{
+    margin-left: 220px;
+}
+.admin .table-wrap{
+    padding:20px 40px;
+}
+
+.admin .type{
+    width:100%;
+    height:50px;
+    border-bottom:1px solid rgba(42,63,84,0.1);
+    border-top:1px solid rgba(42,63,84,0.1);
+    padding:11px 41px 0;
+    background:#fff;
+}
+.admin .type li{
+    padding:0 15px;
+    height:26px;
+    line-height:26px;
+    border:1px solid #999;
+    border-radius: 4px;
+    color:#999;
+    margin-right:32px;
+}
+.admin .type li.active{
+    border:none;
+    background:#41B8B0;
+    color:#fff;
+}

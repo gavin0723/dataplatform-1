@@ -1,0 +1,169 @@
+#version-control{
+    width:261px;
+    background:#fff;
+    box-shadow: 0 0 12px 0 rgba(0,0,0,0.1);
+
+    position: fixed;
+    right:0;
+    top:0;
+    z-index:1000;
+
+    transition:right .5s linear;
+}
+#version-control .header{
+    height:51px;
+    line-height: 50px;
+    font-size:14px;
+    color:rgba(13,38,63,0.4);
+    border-bottom:1px solid rgba(13,38,63,0.1);
+}
+
+#version-control .current,
+#version-control .draft{
+    height:68px;
+    color:#0D263F;
+    padding-top:12px;
+    border-bottom:1px solid rgba(13,38,63,0.1);
+    transition:0.15s;
+}
+#version-control .current.active,
+#version-control .draft.active,
+#version-control .history-cont li>div:first-child.active{
+    background-color:#41B8B0;
+    color:#fff;
+}
+
+#version-control .current .title,
+#version-control .draft .title{
+    font-size:16px;
+    margin-bottom:7px;
+}
+#version-control .current .title .icon,
+#version-control .draft .title .icon,
+#version-control .history-title .icon{
+    margin-right:9px;
+}
+
+#version-control .current .info,#version-control .draft .info{
+    font-size:12px;
+    margin-left:26px;
+}
+#version-control .current .info span:first-child,
+#version-control .draft .info span:first-child,
+#version-control .histroy-version-time{
+    display: inline-block;
+    text-align:left;
+}
+#version-control .current .info span:last-child,
+#version-control .draft .info span:last-child,
+#version-control .histroy-version-name{
+    display: inline-block;
+    width: 70px;
+    text-align:right;
+}
+
+#version-control .draft-operate{
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    border-bottom:1px solid rgba(13,38,63,0.1);
+    transition:height .15s;
+    overflow: hidden;
+}
+#version-control .draft-operate>div{
+    width:50%;
+}
+#version-control .draft-operate .draft-operate-approval{
+    color:#3D83B8;
+}
+#version-control .draft-operate .draft-operate-refuse{
+    color:#D77170;
+}
+#version-control .draft-operate .draft-operate-approval span,
+#version-control .draft-operate .draft-operate-refuse span{
+    display: inline-block;
+    margin-right:12px;
+}
+
+#version-control .history-title{
+    height:58px;
+    line-height: 57px;
+    font-size:16px;
+    color:#0D263F;
+    border-bottom:1px solid rgba(13,38,63,0.1);
+}
+#version-control .history-cont{
+    margin-bottom:25px;
+}
+
+#version-control .history-cont li{
+    line-height: 48px;
+    border-bottom:1px solid rgba(13,38,63,0.1);
+    color:#34495E;
+}
+#version-control .history-cont li div{
+    height:48px;
+}
+#version-control .history-cont li>div:first-child{
+    border-bottom: 1px solid #eee;
+    padding-left: 16px;
+    padding-right: 13px;
+}
+#version-control .history-cont li .histroy-handle-btn{
+    transition: 0.15s;
+    height:0;
+    overflow:hidden;
+}
+#version-control .history-cont li .histroy-handle-btn>div{
+    text-align: center;
+}
+
+#version-control .history-cont li .histroy-handle-btn>div:first-child{
+    width:55%;
+    color:#3D83B8
+}
+#version-control .history-cont li .histroy-handle-btn>div:last-child{
+    width:45%;
+    color:#D77170
+}
+
+#version-control .history-cont li .histroy-handle-btn>div span{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#version-control .histroy-cont-wrap{
+    overflow-y: auto;
+}
+
+
+
+#version-control .w100{
+    width:100%;
+}
+
+#version-control .pad{
+    padding-left:16px;
+    padding-right:13px;
+}
+#version-control .box-s-b{
+    box-sizing: border-box;
+}
+
+#version-control-btn{
+    width:50px;
+    height:50px;
+    line-height:25px;
+    border:1px solid #41B8B0;
+    border-right:none;
+    background:#fff;
+    text-align: center;
+    color:#41B8B0;
+    position:fixed;
+    right:0;
+    bottom:90px;
+    z-index: 999;
+
+    transition:height .5s;
+}
+

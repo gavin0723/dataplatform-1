@@ -1,0 +1,39 @@
+#public-table{
+    font-family: 'PingFang SC';
+    color:#666;
+    font-size:14px;
+}
+#public-table table{
+    border-spacing: 0;
+    margin-bottom:30px;
+}
+#public-table td{
+    padding:10px 20px;
+    border-bottom:1px solid #efefef;
+}
+#public-table thead{
+    background: rgba(244,244,244,0.6);
+}
+#public-table thead td{
+    font-size: 16px;
+    color: #333;
+}
+#public-table tbody{
+    background: #fff;
+}
+
+#public-table tr{
+    height: 50px;
+    vertical-align: middle;
+}
+
+#public-table tbody tr:hover{
+    background: #EBF2F7;
+}
+
+#public-table .ant-pagination-item-active{
+    background-color:#41B8B0;
+    border-color:#41B8B0;
+}
+
+

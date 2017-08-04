@@ -1,0 +1,48 @@
+
+/*@font-face {*/
+	/*font-family: BMitra;*/
+	/*font-weight: normal;*/
+	/*src: url('./BMitra.eot?#') format('eot'), url('./BMitra.woff') format('woff'), url('./BMitra.ttf') format('truetype');*/
+/*}*/
+/*@font-face {*/
+	/*font-family: BMitra;*/
+	/*font-weight: bold;*/
+	/*src: url('./BMitraBold.eot?#') format('eot'), url('./BMitraBold.woff') format('woff'), url('./BMitraBold.ttf') format('truetype');*/
+/*}*/
+
+body {
+	/*direction: rtl;*/
+}
+h2, .btn {
+	/*font-family: BMitra, 'B Mitra';*/
+	font-family: Arial;
+}
+h2 {
+	font-weight: bold;
+}
+.btn {
+	font-size: 17px;
+	padding: 4px 8px 2px;
+}
+/*.container {*/
+	/*max-width: 900px;*/
+/*}*/
+textarea {
+	direction: ltr;
+	font-family: serif;
+	tab-size: 15;
+	/*min-height: 300px;*/
+	margin-top: 5px;
+}
+#draw {
+	margin-top: 5px;
+}
+
+#structured-edit{
+	margin-left:220px;
+
+}
+#structured-edit .container-fluid{
+	padding:40px;
+	margin-left:50px;
+}

@@ -1,0 +1,178 @@
+@import "./reset.css";
+@font-face {
+    font-family: 'icomoon';
+    src:  url('./fonts/icomoon.eot');
+    src:  url('./fonts/icomoon.eot') format('embedded-opentype'),
+        url('./fonts/icomoon.ttf') format('truetype'),
+        url('./fonts/icomoon.woff') format('woff'),
+        url('./fonts/icomoon.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-down:before {
+    content: "\e90f";
+}
+.icon-filter:before {
+    content: "\e910";
+}
+.icon-union:before {
+    content: "\e911";
+}
+.icon-up:before {
+    content: "\e912";
+}
+.icon-add:before {
+    content: "\e900";
+}
+.icon-approval:before {
+    content: "\e901";
+}
+.icon-current:before {
+    content: "\e902";
+}
+.icon-delete:before {
+    content: "\e903";
+}
+.icon-draft:before {
+    content: "\e904";
+}
+.icon-edit:before {
+    content: "\e905";
+}
+.icon-history:before {
+    content: "\e906";
+}
+.icon-more:before {
+    content: "\e907";
+}
+.icon-publish:before {
+    content: "\e908";
+}
+.icon-putaway:before {
+    content: "\e909";
+}
+.icon-refuse:before {
+    content: "\e90a";
+}
+.icon-save:before {
+    content: "\e90b";
+}
+.icon-search:before {
+    content: "\e90c";
+}
+.icon-trial:before {
+    content: "\e90d";
+}
+.icon-unfolded:before {
+    content: "\e90e";
+}
+
+
+
+/*common component*/
+#global-loading{
+    position: fixed;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    background: rgba(255,255,255,0);
+    z-index: 99999999999;
+}
+
+#global-loading .loading-cont{
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    top:35%;
+    left:50%;
+    margin-left: -75px;
+    text-align: center;
+    color: #333333;
+}
+#global-loading img{
+    width:80px;
+    height:80px;
+}
+
+
+
+/*title => ActionBtn */
+.action-btn {
+    display: inline-block;
+    min-width:131px;
+    text-align:center;
+    padding: 23px 20px;
+    cursor: pointer;
+    color:#3D83B8;
+    box-sizing: border-box;
+}
+.action-btn-h:hover{
+    background: #EBF2F7;
+}
+
+.action-btn span {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+}
+
+.action-btn .icon {
+    margin-right: 18px;
+    width: 14px;
+}
+
+
+
+
+
+
+.tableDefined .ant-table-thead > tr > th{
+    background:#f4f4f4;
+}
+.tableDefined .ant-table-tbody > tr > td{
+    background:#fff
+}
+.tableDefined .ant-table-tbody > tr:hover > td{
+    background:#EBF2F7
+}
+.tableDefined .manage a{
+    display: inline-block;
+    padding:0 18px;
+    color:#3D83B8;
+}
+.tableDefined thead tr th,.tableDefined tbody tr td{
+    text-align: center;
+}
+.tableDefined thead tr th:first-child,.tableDefined tbody tr td:first-child{
+    text-align: left;
+}
+.tableDefined .ant-pagination li,#main-cont-table .ant-pagination li{
+    border-radius:0;
+    height:30px;
+    line-height: 30px;
+    float: left;
+}
+
+.ant-tabs-nav .ant-tabs-tab-active{
+    color:#41B8B0!important;
+}
+.ant-tabs-ink-bar{
+    background:#41B8B0!important;
+}

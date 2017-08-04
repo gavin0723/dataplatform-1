@@ -1,0 +1,21 @@
+session:
+  prefix: x-token-dataplatform-
+cookie:
+  secret:
+    hashKey: ed1805b0fa2b64ab199f0ad2c6f23eff8cfd4b31f6e690b66c7ce7e6f295817f
+    blockKey: 7e845bb02d23f9ccb168e7935288e75ad97891023f509cccd9fb72868734bffc
+oauth2:
+  url:
+    default: http://oauth2-hosp.dev-bdmd.com
+  appid: dataplatform
+  secret: de779fda524032d59ada70179b9f21d84000a269 
+web:
+  routes:
+  - path: /
+    protected: true
+    routeMode: proxy
+    proxyRoute:
+      scheme: http
+      host: localhost
+      port: 4000
+

@@ -1,0 +1,12 @@
+{
+  "actions":"./actions",
+  "components":"./components",
+  "constants":"./constants",
+  "images":"./images",
+  "reducers":"./reducers",
+  "store": "./store",
+  "styles":"./styles",
+  "d3":"./static/d3.js",
+  "drawTree":"./dependency-tree.js"
+
+}

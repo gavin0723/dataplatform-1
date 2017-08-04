@@ -1,0 +1,26 @@
+/*public tab*/
+#public-tab {
+    height: 47px;
+    background: #fff;
+    color: rgba(102, 102, 102, 0.7);
+    font-size: 16px;
+    padding-left: 45px;
+    box-sizing:border-box;
+}
+
+#public-tab li {
+    line-height: 47px;
+    margin-right: 50px;
+    text-align: center;
+    cursor: pointer;
+    font-size:16px;
+    padding:0 5px;
+}
+
+#public-tab li.active {
+    border-bottom: 2px solid #41b8b0;
+}
+
+#public-tab li.active {
+    color: #41b8b0;
+}

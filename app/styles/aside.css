@@ -1,0 +1,74 @@
+#aside{
+    width:220px;
+    background-color:#2A3F54;
+    font-family: PingFangSC-Regular;
+    color:rgba(255,255,255,0.5);
+    position: fixed;
+    left:0;
+    top:0;
+    z-index:9999
+}
+#aside .aside-cont{
+    padding-top:11px;
+    background-color:#2A3F54;
+}
+#aside .logo{
+    width:152px;
+    height:31px;
+    font-family: FZBANGSHUXINGJW--GB1-0;
+    font-size: 28px;
+    color: #41B8B0;
+    letter-spacing: -0.65px;
+    margin-bottom:28px;
+    margin-left:23px;
+
+}
+
+#aside .head-portrait{
+    width:100%;
+    height:40px;
+    margin-left:23px;
+
+}
+#aside .head-portrait .head-portrait-img{
+    width:40px;
+    height:40px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right:14px;
+}
+
+
+#aside .head-portrait .head-portrait-name{
+    line-height: 20px;
+}
+
+/*tab*/
+.aside-tab{
+    margin-top:15px;
+}
+.aside-tab li{
+    height:50px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    padding-left:23px;
+    cursor: pointer;
+}
+
+.aside-tab li.active  {
+    background: #203040;
+    color:#fff;
+}
+
+.aside-tab li div{
+    width:12px;
+    height:12px;
+    border-radius: 50%;
+    margin-right:15px;
+    border:2px solid rgba(255,255,255,0.5);
+
+}
+.aside-tab li.active  div{
+    border:2px solid #fff
+}

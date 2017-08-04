@@ -1,0 +1,28 @@
+/*MainTab*/
+.main-tab {
+    height: 47px;
+    background: #fff;
+    color: rgba(102, 102, 102, 0.7);
+    font-size: 16px;
+    padding-left: 45px;
+    box-sizing:border-box;
+}
+
+.main-tab li {
+    line-height: 47px;
+    margin-right: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.main-tab li.active {
+    border-bottom: 2px solid #41b8b0;
+}
+
+.main-tab li.active {
+    color: #41b8b0;
+}
+
+.admin .main-tab li{
+    font-size:14px;
+}

@@ -1,0 +1,102 @@
+
+.main-tab-overview>p{
+    margin-top:8px;
+    margin-bottom:38px;
+}
+.main-tab-overview>p span{
+    color:rgba(65,184,176,0.8)
+}
+.main-tab-overview h4{
+    margin-bottom: 20px;
+    color:#333
+}
+
+/*.progress-wrap {*/
+    /*display: flex;*/
+    /*flex-flow: row ;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: space-around;*/
+/*}*/
+
+/*main-cont-progress*/
+.main-cont-progress{
+    width:21%;
+    min-width: 234px;
+    background: #fff;
+    position:relative;
+    margin-bottom: 40px;
+    margin-right:40px;
+    padding-top:40px;
+    float: left;
+}
+.main-cont-progress .circle-style{
+    width:100%;
+    margin-bottom:30px;
+
+}
+.main-cont-progress .circle-style li{
+    width:45%;
+}
+.main-cont-progress .circle-style li span{
+    display:inline-block;
+
+}
+.main-cont-progress .circle-style li span:nth-child(1){
+    width:6px;
+    height:6px;
+    border:3px solid #41B8B0;
+    border-radius: 50%;
+    margin-right:10px;
+    box-sizing: content-box;
+}
+.main-cont-progress .circle-style li:nth-child(1){
+    color:#333;
+    text-align: right;
+}
+.main-cont-progress .circle-style li:nth-child(2) {
+    color:#C6CCD2;
+    text-align: left;
+}
+.main-cont-progress .circle-style li:nth-child(2) span:nth-child(1){
+    border:3px solid #C6CCD2;
+}
+.main-cont-progress .circle-wrap{
+    position:relative;
+}
+
+.main-cont-progress .number{
+    width: 100%;
+    position:absolute;
+    top:37%;
+    text-align: center;
+}
+.main-cont-progress .number .num{
+    font-size:20px;
+}
+.main-cont-progress .number .name{
+    font-size:12px;
+}
+
+.main-cont-progress .source{
+    width: 100%;
+    text-align: center;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+.main-cont-progress .hover-box{
+    display: none;
+    width:144px;
+    height:60px;
+    line-height: 30px;
+    color:#fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0;
+    background:#2A3F54 ;
+    padding-left:4px;
+    font-family: 'PingFang SC';
+    font-size: 12px;
+    position:absolute;
+    z-index: 1000;
+}
+

@@ -1,0 +1,325 @@
+.tree {
+    direction: ltr;
+    font-family: Arial;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    background: #fff;
+    min-height:228px;
+
+    padding: 20px;
+    overflow: auto;
+}
+
+.word {
+    fill: #555;
+    cursor: default;
+}
+
+.tag {
+    fill: #777;
+}
+
+.edge, .arrow {
+    stroke: #ccc !important;
+    stroke-width: 1.5;
+}
+
+.dependency {
+    fill: #ccc;
+}
+
+.dependency.active {
+    fill: #3276b1;
+}
+
+.word.active, .edge.active, .arrow.active {
+    stroke: #3276b1 !important;
+}
+
+.word.w0 {
+    fill: #ccc;
+}
+
+/*
+   NOUN：       身体部位
+   ADJ：          属性
+   VERB：       病变
+   ADV：         属性
+*/
+
+.word-ADJ {
+    fill: #21B4BA !important;
+}
+
+.word-NOUN {
+    fill: #178AD5 !important;
+}
+
+.word-ADV {
+    fill: #F67D22 !important;
+}
+
+.word-VERB {
+    fill: #E51C26 !important;
+}
+
+.sample-sentence {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.sample-sentence:hover {
+    text-decoration: underline;
+    color: #3276b1;
+}
+
+
+.step-block {
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+}
+
+.step-block:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: 0px;
+    background-color: #DBDCE1;
+    top: 24px;
+}
+
+#step3:before{
+    width:0;
+    height:0;
+}
+
+.step-block:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    left: -8px;
+    background-color: #8894A2;
+    top: 18px;
+    border: 3px solid #ffffff;
+}
+
+.step-header {
+    padding-left: 15px;
+    margin-left: -15px;
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.step-banner-title {
+    font-size: 18px;
+    color: #B1CAE2;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.step-banner-tip {
+    color: #B1B3BC;
+    padding-bottom: 4px;
+    font-size: 14px;
+}
+
+.step-body {
+    margin-top: 16px;
+}
+
+.step-block.active .step-header {
+    /*border-left: 3px solid #3375B1;*/
+    /*border-top: 1px solid #FAFAFD;*/
+    /*-webkit-box-shadow: 3px 3px 3px #CCC;*/
+    /*-moz-box-shadow: 3px 3px 3px #CCC;*/
+    /*box-shadow: 1px 3px 3px rgba(200, 200, 200, .3);*/
+}
+
+.step-block.active:after {
+    background-color: #3375B1;
+}
+
+.step-block.active .step-banner-title {
+    color: #4E89BB;
+}
+
+.step-block.active .step-banner-tip {
+    color: #566373;
+}
+
+.step-last:before {
+    display: none;
+}
+
+/*分词输入框*/
+.cut-input-container {
+    padding: 0px;
+    margin: 0px;
+    height: 40px;
+    /*border: 1px solid #E6E6E6;*/
+    /*border-radius: 5px;*/
+    white-space: nowrap;
+}
+
+.cut-input-container input[type='text'] {
+    padding: 4px 10px;
+    height: 40px;
+    border: none;
+    box-shadow: none;
+    display: block;
+    width: 80%;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+    /*border-right: none;*/
+    /*border-top-right-radius: 0px;*/
+    /*border-bottom-right-radius: 0px;*/
+    margin-bottom: 8px;
+}
+.cut-input-container button{
+    height: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #31AFA6;
+    /*border-top-left-radius: 0px;*/
+    /*border-bottom-left-radius: 0px;*/
+    outline: none;
+    display: block;
+
+
+}
+.cut-input-container button:hover{
+    background-color: #379e97;
+    color: #ffffff;
+}
+.cut-input-container button:active,.cut-input-container button:visited,.cut-input-container button:focus,.cut-input-container button:link{
+    outline: none;
+    background-color: #379e97;
+    color: #ffffff;
+}
+.btn-default.disabled, .btn-default[disabled], fieldset[disabled] .btn-default, .btn-default.disabled:hover, .btn-default[disabled]:hover, fieldset[disabled] .btn-default:hover, .btn-default.disabled:focus, .btn-default[disabled]:focus, fieldset[disabled] .btn-default:focus, .btn-default.disabled:active, .btn-default[disabled]:active, fieldset[disabled] .btn-default:active, .btn-default.disabled.active, .btn-default[disabled].active, fieldset[disabled] .btn-default.active{
+    background-color: #fff!important;
+    border-color: #ccc!important;
+    color: #ccc!important;
+    cursor: not-allowed;
+}
+#step1{
+    padding-bottom: 65px;
+
+}
+#step1,#step2,#step3,#step4{
+    padding-left:40px;
+}
+/*step2*/
+.tree-container{
+    min-height: 200px;
+    position: relative;
+    display: none;
+    padding-top: 20px;
+    padding-left: 20px;
+    overflow:auto;
+}
+.cut-word-relationship{
+    white-space: nowrap;
+    display: none;
+}
+#btnSave{
+    padding: 8px 30px;
+    border: 1px solid #9DBBD7;
+    color: #2474A8;
+    border-radius: 5px;
+   background-color: #ffffff;
+    outline: none;
+}
+#btnSave:hover,#btnSave:active{
+    font-weight: bold;
+}
+.node-list{
+    padding: 5px 20px;
+}
+.node-list .list-title{
+    padding: 5px;
+    background-color: #EDEEF0;
+    color: #ffffff;
+    background-color: #666666;
+    text-align: center;
+    /*padding-left: 25px;*/
+}
+#loadImg1{
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: 15%;
+    top: 5%;
+}
+.word-list li{
+    padding-left: 15px;
+    position: relative;
+}
+
+.word-list li:nth-child(odd){
+    background-color: #F9F9F9;
+}
+.word-list li:nth-child(even){
+    background-color: #EDEEF0;
+}
+.word-list li.active:before{
+    content: '';
+    width: 14px;
+    height: 14px;
+    background-image: url("../images/noun_6703.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 10;
+    left: 10px;
+    top: 7px;
+}
+.word-list li.disabled{
+    cursor: not-allowed;
+    text-decoration:line-through;
+    color: #D54E5C;
+    font-style: italic;
+}
+
+.menu-props {
+    position: absolute;
+    list-style: none;
+    background-color: #ECECEC;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-props-item {
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.cut {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.word-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.word-list li {
+    padding: 5px 10px;
+    padding-left: 25px;
+    cursor: pointer;
+}

@@ -1,0 +1,12 @@
+
+#search-global{
+    position:fixed;
+    left:300px;
+    right:80px;
+    top:30%;
+}
+
+#search-global #head-search .head-search-drop{
+    width:100%;
+    left:0px
+}

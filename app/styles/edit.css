@@ -1,0 +1,415 @@
+/*common Header*/
+#editHeader {
+    height: 50px;
+    background: #2A3F54;
+    padding: 0 24px;
+}
+
+#editHeader .logo {
+    font-size: 28px;
+    color: #41B8B0;
+    line-height: 50px;
+}
+
+#editHeader .user-info {
+    padding-top: 16px;
+}
+
+#editHeader .user-info span {
+    display: inline-block;
+    margin-right: 12px;
+    font-size: 14px;
+    color: #fff;
+    height: 20px;
+    line-height: 20px;
+}
+
+#editHeader .user-info img {
+    width: 20px;
+    height: 20px;
+}
+
+/*common title*/
+#editTitle {
+    width: 100%;
+    height: 67px;
+    background: #fff;
+}
+
+#editTitle .wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#editTitle .title {
+    width: 500px;
+    line-height: 67px;
+    font-size: 26px;
+    color: #333;
+}
+
+/*content*/
+#edit .edit-cont-wrap,#structuredEdit .edit-cont-wrap{
+    width: 100%;
+    background: rgb(250, 250, 250)
+}
+
+#edit .edit-info,#structuredEdit .edit-info{
+    width:100%;
+    background: rgb(250, 250, 250);
+}
+#edit .edit-info .cont-title,#structuredEdit .edit-info .cont-title{
+    width:1000px;
+    margin:0 auto;
+    height: 63px;
+    background: rgb(250, 250, 250)
+}
+
+#edit .cont-title .cont-title-txt,#structuredEdit .cont-title .cont-title-txt {
+    line-height: 63px;
+    font-size: 16px;
+    color: rgba(42, 63, 84, .50)
+}
+
+#edit .cont-title .edit-version,#structuredEdit .cont-title .edit-version{
+    padding-top: 14px;
+    line-height: 20px;
+    font-size: 12px;
+    color: rgba(42, 63, 84, .50);
+    text-align: right;
+}
+
+/*footer*/
+#editFooter {
+    border-top: 1px solid rgba(42, 63, 84, 0.1);
+    padding-top: 14px;
+    font-size: 13px;
+    color: #34495E;
+    background: #fff;
+}
+
+#editFooter .approve {
+    margin-right: 25px;
+}
+
+#editFooter .set-current {
+    margin-bottom: 12px;
+}
+
+#editFooter .textarea {
+    width: 100%;
+    height: 50px;
+    font-size: 12px;
+}
+
+/*edit Synonyms*/
+#editSynonyms li {
+    height: 48px;
+    line-height: 48px;
+    background: #fff;
+    border-bottom: 1px solid #EFEFEF;
+    font-size: 14px;
+    color: #333;
+}
+
+#editSynonyms input {
+    width: 800px;
+    height: 34px;
+    margin-top: 8px;
+    padding-left: 4px;
+}
+
+#editSynonyms .edit-wrap span {
+    display: inline-block;
+    padding: 0 18px;
+    height: 48px;
+    line-height: 48px;
+    color: #3D83B8;
+}
+
+/*edit Normal*/
+#editNormal ,#editEncyclopedia ,#editSynonyms,#structuredEditCont{
+    width:100%;
+    background:rgb(250,250,250)
+}
+#editNormal .cont-wrap,#editEncyclopedia .cont-wrap,#editSynonyms .cont-wrap,#structuredEditCont .cont-wrap{
+    width:1000px;
+    padding: 20px;
+    padding-top: 0;
+    margin:0 auto;
+    background:#fff;
+}
+#structuredEditCont .cont-wrap{
+    padding:20px;
+}
+#editEncyclopedia .cont-wrap{
+    padding-top: 20px;
+}
+#editNormal .item {
+    padding-top: 20px;
+    border-bottom: 1px solid rgba(174, 189, 202, 0.4);
+}
+
+#editNormal .item:last-child {
+    border-bottom: none;
+}
+
+#editNormal h4 {
+    font-size: 14px;
+    color: #41B8B0;
+    margin-bottom: 10px;
+}
+
+#editNormal .input-wrap {
+    margin-bottom: 18px;
+    height:32px;
+}
+
+#editNormal input {
+    width: 250px;
+    height: 32px;
+}
+
+#editNormal .input-name {
+    display: inline-block;
+    width: 98px;
+    text-align: left;
+    color: rgba(51, 51, 51, 0.5);
+    font-size: 13px;
+    line-height: 32px;
+}
+
+/*edit encyclopedia*/
+#editEncyclopedia .grounp {
+    margin-bottom: 20px;
+}
+
+#editEncyclopedia h4 span {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+#editEncyclopedia h4 .title {
+    font-size: 14px;
+    color: #41B8B0;
+    line-height: 20px;
+    margin-right: 10px;
+}
+
+#editEncyclopedia h4 .btn {
+    width: 40px;
+    height: 24px;
+    border-radius: 8px;
+    border: 1px solid #3D83B8;
+    line-height: 22px;
+    text-align: center;
+    font-size: 12px;
+    color: #3D83B8;
+}
+
+#editEncyclopedia h4 .btn:hover {
+    background: #EBF2F7;
+}
+
+#editEncyclopedia .grounp .ant-input {
+    font-size: 14px;
+    padding: 8px 10px;
+}
+
+.encylopediaModal .ant-modal-content {
+    border-radius: 0;
+}
+
+.encylopediaModal .ant-modal-content .ant-modal-body {
+    padding: 0;
+}
+
+.encylopediaModal .ant-tabs-nav .ant-tabs-tab {
+    padding: 14px 20px;
+}
+
+.encylopediaModal .ant-tabs-tab-prev,
+.encylopediaModal .ant-tabs-tab-next {
+    padding-top: 7px;
+    margin: 0;
+}
+
+.encylopediaModal .ant-tabs-tab-prev .ant-tabs-tab-prev-icon,
+.encylopediaModal .ant-tabs-tab-next .ant-tabs-tab-next-icon {
+    font-size: 18px;
+}
+
+.encylopediaModal .ant-tabs-nav-scroll {
+    padding: 0 10px;
+}
+
+.encylopediaModal .ant-tabs-tabpane {
+    padding: 0px 20px;
+    height: 460px;
+    overflow: auto;
+}
+
+.encylopediaModal .footer {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-top: 1px solid #E5E9EE;
+    font-size: 16px;
+}
+
+.encylopediaModal .footer span {
+    display: inline-block;
+}
+
+.encylopediaModal .footer .cancel {
+    width: 400px;
+    color: #34495E;
+}
+
+.encylopediaModal .footer .sure {
+    width: 399px;
+    border-left: 1px solid #E5E9EE;
+    color: #3D83B8;
+}
+.encylopediaModal .contGrounp{
+    margin-bottom:20px;
+}
+.encylopediaModal .contGrounp label {
+    font-size: 16px;
+    color: #34495E;
+}
+
+.encylopediaModal .contGrounp .ant-checkbox {
+    margin-right: 8px;
+    margin-top: 5px;
+    float: left;
+}
+
+.encylopediaModal .contGrounp .content {
+    font-size: 14px;
+    color: #34495E;
+    margin-left: 30px;
+    padding-top: 7px;
+}
+
+/*defined*/
+#edit .ant-input {
+    border-radius: 8px;
+}
+
+#select-defined {
+    margin-right: 37px;
+    display: inline-block;
+}
+#select-defined select{
+    width:100%;
+    height:100%;
+    border:none;
+    background: #fff;
+}
+
+#select-defined .ant-select-selection {
+    border-radius: 8px 0 0 8px;
+    border-right: none;
+    height: 32px;
+    width:70px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+#select-defined .ant-input {
+    border-radius: 0 8px 8px 0;
+}
+
+#edit-btn-defined {
+    width: 68px;
+    height: 32px;
+    line-height: 30px;
+    border-radius: 8px;
+    margin-right: 17px;
+    text-align: center;
+    display: inline-block;
+}
+
+#edit-btn-defined:hover {
+    background: #EBF2F7;
+}
+
+#edit-btn-defined span {
+    display: inline-block;
+}
+
+#edit-btn-defined span:first-child {
+    margin-right: 8px;
+}
+
+
+/*.ant-steps .ant-steps-item.ant-steps-status-finish .ant-steps-title,*/
+/*.ant-steps .ant-steps-item.ant-steps-status-finish .ant-steps-description{*/
+    /*color:#41B8B0*/
+/*}*/
+/*#symptomEditNormalDepartment .ant-select-selection--multiple{*/
+    /*min-height:32px;*/
+/*}*/
+/*#symptomEditNormalDepartment input{*/
+    /*height:24px;*/
+/*}*/
+/*#symptomEditNormalDepartment .ant-select-selection--multiple .ant-select-selection__rendered > ul > .ant-select-selection__choice{*/
+    /*height:24px;*/
+    /*line-height:24px;*/
+    /*background-color:#41B8B0;*/
+    /*color:#fff;*/
+/*}*/
+/*#symptomEditNormalDepartment .ant-select-selection__choice__remove{*/
+    /*color:#fff;*/
+/*}*/
+/*#symptomEditNormalDepartment  .ant-select-selection__placeholder{*/
+    /*height:25px;*/
+    /*line-height:25px;*/
+/*}*/
+
+#editNormal.symptomEditNormal .symptomAttrs .input-name{
+    width:80px;
+}
+#editNormal.symptomEditNormal .symptomAttrs .input-wrap{
+    margin-bottom:10px;
+}
+#editNormal.symptomEditNormal .categories .categoriesList{
+    height:32px;
+    line-height:32px;
+    padding: 0 14px;
+    border: 1px solid rgb(62,162,253);
+    border-radius: 8px;
+    overflow: hidden;
+    color: rgb(62,162,253);
+    margin-right:10px;
+}
+#editNormal.symptomEditNormal .addCategories{
+    padding-left:98px;
+    color:rgb(58, 132, 185);
+    margin-bottom:10px;
+    display: inline-block;
+}
+.ant-popover-inner-content{
+    max-height:220px!important;
+    overflow:auto!important;
+}
+/*#editNormal.symptomEditNormal .categories input{*/
+    /*height:28px;*/
+/*}*/
+
+/*#editNormal.symptomEditNormal .categories .ant-select-selection--multiple .ant-select-selection__rendered > ul > li{*/
+    /*margin:0;*/
+    /*height:28px;*/
+    /*line-height:28px;*/
+    /*margin-right:5px;*/
+/*}*/
+/*#editNormal.symptomEditNormal .categories .ant-select-selection{*/
+    /*border-radius: 8px;*/
+/*}*/
+/*#editNormal.symptomEditNormal .categories .ant-select-selection--multiple{*/
+    /*padding:1px 0;*/
+    /*height:32px;*/
+
+/*}*/
